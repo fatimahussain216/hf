@@ -15,7 +15,7 @@ import streamlit as st
 
 
 
-api_key="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"
+api_key="hf_................."
 
 def bot(api_key):
 
