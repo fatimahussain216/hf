@@ -7,9 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1Y_DkKwyvqyYYstqvWKic4C-VfpWCiCjK
 """
 
-from langchain_core.output_parsers import StrOutputParser
+#from langchain_core.output_parsers import StrOutputParser
 from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
-from langchain_core.prompts import PromptTemplate
+#from langchain_core.prompts import PromptTemplate
 import streamlit as st
 
 
