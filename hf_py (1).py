@@ -9,7 +9,7 @@ Original file is located at
 
 #from langchain_core.output_parsers import StrOutputParser
 from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
-#from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 import streamlit as st
 
 
@@ -22,7 +22,7 @@ def bot(api_key):
   llm=HuggingFaceEndpoint(
       repo_id="google/gemma-2-2b-it",
       task="text-generation",
-      huggingfacehub_api_token=api_key
+      HUGGINGFACE_HUB_API_KEY=st.secrets["HUGGINGFACE_HUB_API_KEY"]
   )
   model=ChatHuggingFace(
       llm=llm,
